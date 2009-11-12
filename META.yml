@@ -1,6 +1,6 @@
 ---
 name: NetSDS-Kannel
-version: 1.100
+version: 1.300
 author:
   - 'Net.Style Development Team <info@netstyle.com.ua>'
 abstract: Kannel API for NetSDS VAS platform
@@ -12,7 +12,9 @@ requires:
   NetSDS::Class::Abstract: 1.000
   NetSDS::Util::Convert: 1.000
   NetSDS::Util::String: 1.000
+  NetSDS::Util::Types: 1.000
   URI::Escape: 0
+  XML::LibXML: 1.60
   perl: 5.008
   version: 0.50
 build_requires:
@@ -23,10 +25,10 @@ build_requires:
 provides:
   NetSDS::Feature::Kannel:
     file: lib/NetSDS/Feature/Kannel.pm
-    version: 1.100
+    version: 1.300
   NetSDS::Kannel:
     file: lib/NetSDS/Kannel.pm
-    version: 1.100
+    version: 1.300
 generated_by: Module::Build version 0.3
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
